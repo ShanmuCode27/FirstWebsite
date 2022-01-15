@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>To Do List</title>
+  <!-- <script src="https://unpkg.com/vue@next"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+  <script src = "https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel = "stylesheet" type = 'text/css' href = "../Stylesheets/mainCss.css">
+  <link rel = "stylesheet" type = "text/css" href = "../Stylesheets/toDo.css">
+</head>
+
+</head>
+<body>
+
+  <nav>
+    <!--navigations-->
+    <ul id = "left">
+        <li class = "left-nav"><a href = "../index.html">Home</a></li>
+        <li class = "left-nav"><a href = "map.html">Map</a></li>
+    </ul>
+    <ul id = "right">
+        <li><a href = "toDo.html">To Do</a></li>
+        <li><a href = "whereToGo.html"> Where to go</a></li>
+        <li><a href = "touristInformation.html">Tourist Information</a></li>
+        <li><a href = "aboutUs.html">About Us</a></li>
+        <li><a href = "contactUs.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+  <div id = "body-wrap">
+    <div id = "transbox">
+
+
+      <div id = "app">
+        <!-- <h1> {{title}} </h1> -->
+        <!-- <input type="text" v-model="newTask" v-on:keypress.enter="addTask()"> -->
+
+        <div class = "container">
+          <h1>To Do List</h1>
+
+          <div v-if = "!inEdit">
+            <input type = "text" v-model = "todo" v-on:keyup.13="storeItem">
+            <input type = "submit" value = "Add" @click = "storeItem">
+          </div>
+
+          <div v-else>
+            <input type = "text" v-model = "todo" v-on:keyup.13="update">
+            <input type = "submit" value = "update" @click = "update">
+          </div>
+
+          <ol>
+            <li v-for= "(todo, index) in todos">
+              {{todo}}
+
+              <button @click = "editItem(index, todo)">Edit</button>
+              <button @click = "deleteItem(index)">Delete</button>
+
+            </li>
+          </ol>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div id = "logo">
+        <div id = "check-out">
+            <h4>For More Details About Us </h4>
+        </div>
+        <div id = "icons">
+            <a href="https://www.facebook.com/" target = "_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://twitter.com/" target = "_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+
+            <a href = "https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </div>
+    <div id = "more">
+        <p>@Copyrights Sri Lanka Tourism Website Project </p>
+    </div>
+</footer>
+
+  <script src = "../Javascripts/toDo.js"> </script>
+  <script>
+</script>
+
+</body>
+</html>

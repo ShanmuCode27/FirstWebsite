@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+#body-wrap{
+    background-image: url("../Images/map images/background image map.jpg");
+    background-size:cover;
+    background-repeat: repeat-y;
+    z-index: -1;
+
+}
+#transbox {
+    background-color: #fff;
+    border: 1px solid rgb(8, 6, 8);
+    opacity: 0.9;
+
+}
+
+#app .container{
+    display: flex;
+    flex-direction: column;
+    border : solid 5px #45d;
+    border-radius: 10px;
+    width: 500px;
+    margin: 30vh auto;
+    font-family: 'Readex Pro', sans-serif;
+    align-items: center;
+    padding: 20px;
+}
+
+#app .container button{
+    background-color: blanchedalmond;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    padding: 5px 10px;
+    border: #000 2px solid;
+    border-radius: 4px;
+    margin: 5px auto;
+
+}
+
+
+#app .container input[type="text"]{
+    padding: 5px;
+    margin: 20px auto;
+    border: solid 2px rgb(8, 88, 153);
+    border-radius: 20px;
+    font-family: 'Comic Sans MS',sans-serif;
+    font-weight: 600;
+}
+
+#app .container input[type="submit"]{
+    background-color: rgb(9, 202, 128);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: #000 1px 1px 5px;
+    padding: 5px 10px;
+    border: #000 2px solid;
+    border-radius: 4px;
+    margin: 5px auto;
+}

@@ -1,0 +1,77 @@
+/* the body background */
+body{
+    background-image: url("../Images/map images/background image map.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.1); 
+    z-index: -1;
+
+}
+
+
+
+body #opacity{
+    size: inherit;
+}
+/*heading text */
+
+#map-text p{
+    margin: 30px auto;
+    text-align: center;
+    font-family: 'Bakbak One', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: #000 2px 2px 10px;
+
+}
+
+
+
+/* map */
+.mapouter{
+    position: relative;
+    padding: 0px;
+    margin: auto;
+}
+
+.mapouter .gmap_canvas{
+    position: relative;
+    border: solid #000 2px;
+    height: 70vh;
+}
+
+
+/*second map */
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 820px) and (orientation:landscape){
+
+    body{
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100px;
+        width: 100%;
+        font-size: 12px;
+    }
+
+
+    .mapouter{
+        position: relative;
+        padding: 0px;
+        margin: auto;
+    }
+    
+    .mapouter .gmap_canvas{
+        position: relative;
+        border: solid #000 2px;
+        height: 30vh;
+        width:35vw;
+    }
+    
+    
+}

@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@1,200&family=Readex+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* the header with navigation bar */
+
+nav {
+    width:100vw;
+    background-color: #333;
+    height: 48px;
+    overflow-y:hidden;
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+    overflow: hidden;
+    background-color: #333;
+    display: block;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+nav ul li {
+     display: inline-block;
+
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+
+}
+
+#right {
+    float: right;
+}
+
+#left {
+    float: left;
+}
+
+li > a:hover {
+    background-color: #fff;
+    color: #000;
+    border-bottom: solid 1px #000;
+    transition: 0.5s;
+    transform: translateX(-5px);
+
+}
+
+/* image to display */
+
+
+#main-image {
+    display: block;
+}
+
+
+#main-image img{
+    display: block;
+}
+
+#pearl{
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    padding: 10px 50px;
+    font-family: 'Papyrus', fantasy;
+    font-weight: bolder;
+    color: rgb(65, 75, 97);
+    font-size: 2rem;
+    word-spacing:10px;
+    text-shadow: rgb(168, 230, 188) 2px 2px 5px;
+    animation: pearl 4s alternate 1s 2;  
+}
+
+@keyframes pearl{
+    0% {
+        font-size:2rem;
+    }
+
+
+    100%{
+        font-size: 3rem;
+        transform: translateX(-50px);
+    }
+}
+
+#plan-your-visit {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  padding: 10px 50px;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: bold;
+  color: rgb(25,65,35);
+  border: solid 2px #000;
+  border-radius: 10px;
+}
+#plan-your-visit:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-shadow:#000 1px 1px 1px ;
+    border:  solid 2px #fff;
+     
+}
+
+
+
+/* some details about country */
+
+ #details-wrap{
+    display: block;
+    background-color: rgba(199, 212, 199, 0.5);
+} 
+
+#details-wrap:hover{
+    animation: bgAnimColor 5s ease-in-out forwards infinite 3s;
+
+}
+
+@keyframes bgAnimColor{
+    0% {
+        background-color: rgba(216, 211, 140, 0.5);
+    }
+
+    50% {
+        background-color: rgba(33, 110, 100, 0.5);
+    }
+
+    100% {
+        background-color: rgba(199, 212, 199, 0.5);
+    }
+}
+
+#details{
+    margin: 70px 80px 20px 10px;
+    overflow: hidden;
+
+}
+#details h3{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Bakbak One', cursive;
+    color:rgb(91, 24, 168);
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: rgb(233, 241, 241) 1px 2px 5px;
+}
+
+#details p{
+   text-align: justify;
+   padding: 20px 30px;
+   font-family:'Comic Sans MS', Arial;
+}
+
+#detail-image-main{
+    border: #fff;
+    width: 60vw;
+    height: 30vh;
+    margin: 9% 5% 3% 7%;
+    border-radius: 10rem;
+    border: outset #fff 5px;
+    animation: image 2s alternate 1s infinite ease-in-out;
+}
+
+@keyframes image{
+    0%{
+        transform: translateX(-30%) translateY(-20%);
+    }
+
+    50%{
+        transform: translateX(-15%) translateY(20%);
+   
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+#detail-image-main:hover {
+    border:rgb(21, 144, 214) 10px solid;
+    transition: 0.6s;
+}
+
+#details-and-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* cards */
+
+#grid-container{
+    margin: 20px 100px 25px 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: auto;
+    justify-content: space-evenly;
+
+}
+
+#grid-container .cards{
+    display: flex;
+    height: 40vh;
+    width:20rem;
+    border: solid #000 2px;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#grid-container .cards div{
+    text-align: center;
+    color:rgb(253, 253, 253);
+    border: solid 1px #000;
+    border-radius: 10rem;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.4);
+    font-family:'Comic Sans MS', Arial;
+    text-shadow: #000 1px 1px 5px;
+
+}
+
+#grid-container a{
+    text-decoration: none;
+}
+
+#grid-container a:hover .cards div{
+    padding: 40px 40px;
+    font-size : 1.2rem;
+    transition: 0.3s;
+}
+
+#grid-container a:hover {
+    margin: -20px 5px 30px 10px;
+    transition: 0.3s;
+
+}
+
+
+
+/* button / text */
+
+#grid-container #adventure{
+    background-image: url("../Images/Index images/adventure image main.jpg");
+    background-size: 500px 400px;
+}
+
+#grid-container #relaxation{
+    background-image: url("../Images/Index images/relaxation image index.jpg");
+    background-size: 400px 405px;
+}
+
+#grid-container #explore{
+    background-image: url("../Images/Index images/explore image index.jpg");
+    background-size: 400px 400px;
+
+}
+
+/* fourth card */
+
+#fourth-card {
+    display: flex;
+    height: 40vh;
+    width:50rem;
+    border: solid #000 2px;
+    border-radius: 2em;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 30px 100px 60px;
+    background-image: url("../Images/Index images/fourth card image index.jpg");
+    background-size: 800px 500px;
+}
+
+
+#fourth-card #fourth-card-text{
+    text-align: center;
+    color:rgb(253, 253, 253);
+    border: solid 1px #fff;
+    border-radius: 10rem;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.8);
+    font-family:'Comic Sans MS', Arial;
+    text-shadow: #000 1px 1px 5px;
+}
+
+#fourth a{
+    text-decoration: none;
+}
+
+#fourth p{
+    width: 30%;
+    margin:150px 100px 20px 0px;
+    text-align: justify;
+    padding: 20px 30px;
+    font-family:'Comic Sans MS', Arial;
+}
+
+#fourth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#fourth:hover{
+    margin: 10px 40px;
+    padding: 40px;
+    font-size : 1.2rem;
+    transition: 1s;
+}
+
+    /* footer */
+
+footer {
+    width:100vw;
+    height:30vh;
+    background-color: #333;
+
+}
+
+footer #logo{
+    padding: 30px 10px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+footer #logo #check-out{
+    color:white;
+    font-size: 1rem;
+    grid-column: 1 /4;
+    padding: 20px;
+    font-family: 'Readex Pro', sans-serif;
+
+}
+
+footer #logo a {
+    font-size: 30px;
+    color:rgb(233, 241, 241);
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+footer #more p{
+    color:#fff;
+    text-align: center;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 768px){
+    body{
+        width: 120%;
+    } 
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+        width: 100%;
+    }
+
+    #details-and-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    
+    #detail-image-main{
+    
+        margin: 9% 5% 20% 25%;
+    
+    }
+    
+    
+    #details p{
+        width: 80%;
+        margin: auto;
+        box-sizing: border-box;
+     }
+
+     #grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: auto;
+        row-gap: 20px;
+        justify-content:center
+    
+    }
+
+    #fourth-card {
+        display: flex;
+        width: 80%;
+        border: solid #000 2px;
+        border-radius: 2em;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 25px;
+        background-image: url("../Images/Index images/fourth card image index.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    
+    #fourth {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #fourth p {
+        width: 70%;
+        margin: auto;
+        margin-left: 50px;
+        text-align: center;
+        font-family: 'Comic Sans MS', Arial;
+    }
+    
+
+    footer {
+        width:100%;
+        height:30vh;
+        background-color: #333;
+    
+    }
+
+    #pearl{
+        top: 20%;
+        left: 20%
+    }
+
+    #plan-your-visit {
+
+        top: 40%;
+        left: 30%;
+
+}
+
+@keyframes pearl{
+    0% {
+            font-size:1.3rem;
+            text-align: center;
+
+        }
+
+
+    100%{
+        font-size: 1.8rem;
+        transform: translateX(0px);
+        text-align: center;
+    }
+}
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        width: 100%;
+    } 
+
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 130px;
+        width: 100%;
+    }
+
+    #details-and-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    
+    #detail-image-main{
+    
+        margin: 9% 5% 20% 25%;
+    
+    }
+    
+    
+    #details p{
+        width: 80%;
+        margin: auto;
+        box-sizing: border-box;
+        font-size:0.6rem;
+     }
+
+     #grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: auto;
+        row-gap: 20px;
+        justify-content:center;
+        width: 40%;
+        margin: auto;
+    
+    }
+
+    #fourth-card {
+        display: flex;
+        width: 80%;
+        border: solid #000 2px;
+        border-radius: 2em;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 25px;
+        background-image: url("../Images/Index images/fourth card image index.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+   
+    
+    #fourth {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #fourth p {
+        width: 70%;
+        margin: auto;
+        margin-left: 50px;
+        text-align: center;
+        font-family: 'Comic Sans MS', Arial;
+    }
+    
+
+    footer {
+        width:100%;
+        height:30vh;
+        background-color: #333;
+    
+    }
+
+        
+    #pearl{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        padding: 10px 50px;
+        font-family: 'Papyrus', fantasy;
+        font-weight: bolder;
+        color: rgb(65, 75, 97);
+        font-size: 1.4rem;
+        word-spacing:10px;
+        text-shadow: rgb(168, 230, 188) 2px 2px 5px;
+        animation: pearl 4s alternate 1s 2;  
+    }
+
+    @keyframes pearl{
+        0% {
+                font-size:1.4rem;
+                text-align: center;
+
+            }
+
+
+        100%{
+            font-size: 2rem;
+            transform: translateX(0px);
+            text-align: center;
+        }
+    }
+        #plan-your-visit {
+
+            top: 40%;
+            left: 25%;
+
+    }
+
+    #main-image img{
+        height:600px;
+    }
+
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    
+ 
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100px;
+        width: 100%;
+    }
+
+    #details-and-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    
+    #detail-image-main{
+
+        width: 50vw;
+        margin: 9% 5% 20% 25%;
+    
+    }
+    
+    
+    #details p{
+        width: 80%;
+        margin: auto;
+        box-sizing: border-box;
+        font-size:0.6rem;
+     }
+
+     #grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: auto;
+        row-gap: 20px;
+        justify-content:center;
+        width: 40%;
+        margin: auto;
+    
+    }
+
+    #fourth-card {
+        display: flex;
+        width: 80%;
+        border: solid #000 2px;
+        border-radius: 2em;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 50px;
+        background-image: url("../Images/Index images/fourth card image index.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+   
+    
+    #fourth {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #fourth p {
+        width: 70%;
+        margin: auto;
+        margin-left: 50px;
+        text-align: center;
+        font-family: 'Comic Sans MS', Arial;
+    }
+    
+
+    footer {
+        width:100%;
+        height:30vh;
+        background-color: #333;
+    
+    }
+
+        
+    #pearl{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        padding: 10px 50px;
+        font-family: 'Papyrus', fantasy;
+        font-weight: bolder;
+        color: rgb(65, 75, 97);
+        font-size: 1.4rem;
+        word-spacing:10px;
+        text-shadow: rgb(168, 230, 188) 2px 2px 5px;
+        animation: pearl 4s alternate 1s 2;  
+    }
+
+    @keyframes pearl{
+        0% {
+                font-size:1.4rem;
+                text-align: center;
+
+            }
+
+
+        100%{
+            font-size: 2rem;
+            transform: translateX(0px);
+            text-align: center;
+        }
+    }
+        #plan-your-visit {
+
+            top: 40%;
+            left: 40%;
+
+    }
+
+    #main-image img{
+        height:600px;
+    }
+
+}

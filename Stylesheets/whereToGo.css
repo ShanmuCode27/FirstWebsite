@@ -1,0 +1,97 @@
+
+body{
+    overflow-x: hidden;
+}
+#body-wrap{
+    background-image: url("../Images/map images/background image map.jpg");
+    background-size:cover;
+    background-repeat: repeat-y;
+    z-index: -1;
+}
+
+#transbox {
+    background-color: #fff;
+    border: 1px solid rgb(8, 6, 8);
+    opacity: 0.9;
+}
+
+
+
+#head-part h2{
+    font-family: 'Poppins', fantasy;
+    text-align: center;
+    color:rgb(17, 26, 29);
+    padding:20px;
+    margin-bottom:2px;
+}
+
+/* hiding rest from western when page opens */
+
+#central, #southern, #eastern, #northern, #uva, #sabaragamuwa, #north-western, #north-central{
+    display: none;
+}
+
+
+/* selection */
+
+#province-select{
+    display: list-item;
+    margin: auto;
+    background-color: burlywood;
+    border: solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 600;
+    margin: 10px auto 100px auto;
+
+}
+
+#province-select option{
+    border-top: solid 1px ;
+    border-bottom: solid 1px ;
+}
+
+
+/* grid images */
+
+.grid-images{
+    width:100%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto;
+    grid-gap:55px 15px;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px 20px 20px 20px; 
+    background-color:#fff;
+    height: 270px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color:rgb(15, 7, 0);
+}
+
+.card img {
+    width: 100%;
+    height:200px;
+    border-radius: 15px 15px 0 0;
+}
+.about-card{
+    padding: 5px 16px;
+}
+.about-card p{
+    line-height: 20px;
+    text-align: center;
+    padding: 20px 15px 5px 15px;
+
+
+}
+

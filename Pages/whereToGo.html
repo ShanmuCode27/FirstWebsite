@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where To Go</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" type = 'text/css' href = "../Stylesheets/mainCss.css">
+    <link rel = "stylesheet" type = "text/css" href = "../Stylesheets/whereToGo.css">
+</head>
+
+<body>
+
+    <nav>
+        <!--navigations-->
+        <ul id = "left">
+            <li class = "left-nav"><a href = "../index.html">Home</a></li>
+            <li class = "left-nav"><a href = "map.html">Map</a></li>
+        </ul>
+        <ul id = "right">
+            <li><a href = "toDo.html">To Do</a></li>
+            <li><a href = "whereToGo.html">Where to go</a></li>
+            <li><a href = "touristInformation.html">Tourist Information</a></li>
+            <li><a href = "aboutUs.html">About Us</a></li>
+            <li><a href = "contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Province selection         -->
+    <div id = "body-wrap">
+        <div id = "transbox">
+
+            <div id = "head-part">
+                <h2>Browse by Province</h2>
+                <select id = "province-select" onchange="display()">
+                    <option value = "Western Province">Western Province</option>
+                    <option value = "Central Province">Central Province</option>
+                    <option value = "Southern Province">Southern Province</option>
+                    <option value = "Eastern Province">Eastern Province</option>
+                    <option value = "Northern Province">Northern Province</option>
+                    <option value = "Uva Province">Uva Province</option>
+                    <option value = "Sabaragamuwa Province">Sabaragamuwa Province</option>
+                    <option value = "North-Western Province">North Western Province</option>
+                    <option value = "North-Central Province">North Central Province</option>
+                </select>
+            </div>
+
+            <!-- displaying the correct province image cards when selected -->
+            
+                <div id = "western">
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/gangaramaya image for card in where.jpg">
+                            <div class="about-card">
+                                <p>The Gangaramaya Temple <br> - Colombo -</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/independence image for card in where.jpg" >
+                            <div class="about-card">
+                                <p>Independence Square <br> - Colombo -</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/zoo image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Zoological Garden - Dehiwala </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/seethawaka image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Seethawaka Botanical Garden </p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/diyatha image for card in where.jpeg">
+                            <div class="about-card">
+                                <p> Diyatha Uyana <br>- Battaramulla -</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/leisure image for card in where.jpg">
+                            <div class="about-card">
+                                <p>LeisureWorld Water Park <br>- Avissawella -</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/guruge image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Guruge Park <br>- Ja Ela -</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/mount image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Beach <br>- Mount Lavinia -</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/western/Ranmudu image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Ranmudu Ella</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+
+                <div id = "central">
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/Ambuluwawa image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Ambuluwawa Trigonometrical Station</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/sigiriya image for card in where.jpg" >
+                            <div class="about-card">
+                                <p>Sigiriya Rock</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/Gregory image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Gregory lake </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/temple image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Temple of the Sacred Tooth Relic</p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/Moon imager for card in where.jpg">
+                            <div class="about-card">
+                                <p> Moon Plains </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/Hakgala image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Hakgala Botanical Gardens</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/Laxapana image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Laxapana Falls  </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/Embekke image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Embekke Devalaya</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/central/Dambulla image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Dambulla Royal Cave Temple</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+
+                <div id = "southern">
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/Bird image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Bird Sanctuary <br>- Kalametiya -</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/hikkaduva image for card in where.jpg" >
+                            <div class="about-card">
+                                <p>Beach <br> - Hikkaduwa - </p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/sinharaja image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Sinharaja Forest </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/fort image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Dutch Fort <br> - Galle -</p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/historical image for card in where.jpg">
+                            <div class="about-card">
+                                <p> historical Mansion Museum <br> - Galle -</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/hakgala image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Hakgala Botanical Gardens</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/coral image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Coral Reefs <br> - Unawatuna - </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/unawatuna image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Beach <br> - Unawauna -</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/southern/bundala image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Bundala National Park</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+                
+                <div id = "eastern">
+
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/arugam image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Arugam Bay</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/fort image for card in where+.jpg" >
+                            <div class="about-card">
+                                <p>Fort <br> - Batticoloa - </p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/nilaveli image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Nilaveli Beach</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/yala image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Dutch Fort <br> - Galle -</p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/lovers image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Lovers Leap</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/senenayaka image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Senanayaka Samudra</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/marble image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Marble Beach</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/dutch image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Dutch Bay </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/eastern/kanniya image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Kanniya Hot Springs</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+                    
+                </div>
+
+                <div id = "northern">
+
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/fort image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Fort Jaffna</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/chundikulam image for card in where.jpg" >
+                            <div class="about-card">
+                                <p>Chundikulam National Park</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/kankesanthurai image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Kankesanthurai Beach</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/arippu image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Arippu Dutch Fort</p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/kurikadduwan image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Kurikadduwan</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/queen tower image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Queen Tower - Delft Island</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/ram image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Ram Setu Marine National Park</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/neduntheevu image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Dutch Bay </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/northern/delft image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Delft National Park</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+
+                </div>
+
+                <div id = "uva">
+
+                    
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/wangedikanda image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Wangedikanda Peak</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/rawana image for card in where.jpg" >
+                            <div class="about-card">
+                                <p>Rawana Falls</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/Nine image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Nine Arches Bridge</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/horton  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Horton Plains National Park</p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/little adams peak image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Little Adam's Peak</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/ohiya devils image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Ohiya Devils Stair Case</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/mini worlds image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Mini Worlds End</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/lanka ella image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Lanka Ella - Waterfall </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/uva/hakgala image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Hakgala Mountain</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+
+                </div>
+
+                
+                <div id = "sabaragamuwa">
+
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/yakahatuwa image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Yakahatuwa</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/elephant image for card in where.jpg" >
+                            <div class="about-card">
+                                <p>Pinnawala Elephant Orphanage</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/mawanella image for card in where.JPG">
+                            <div class="about-card">
+                                <p> Mawanella Old Brick Bridge</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/pahanthuduwa image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Pahanthuduwa Waterfall</p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/peak image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Peak Wilderness Sanctuary</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/bible rock image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Bible Rock</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/udawalawa image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Udawalawe National Park</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/kiribathgala image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Kiribathgala Mountain </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/sabaragamuwa/bopath image for card in where.png">
+                            <div class="about-card">
+                                <p> Bopath Falls</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+
+                </div>
+                                
+                <div id = "north-western">
+
+                    
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/baththalangunduwa image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Baththalangunduwa</p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/kalpitiya lagoon  image for card in where.jpg" >
+                            <div class="about-card">
+                                <p>Kalpitiya Lagoon </p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/yakdessagala  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Yakdessagala </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/yapahuwa image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Yapahuwa Rock Fortress</p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/Alankuga Beach Road.jpg">
+                            <div class="about-card">
+                                <p>Alankuda Beach</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/fort  image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Kalpitiya Fort</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/Kalpitiya  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Kalptitiya Penninsula</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/anawilundawa  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Awilundawa Wetland </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north western/kudawa  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Kudawa Beach</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+
+                </div>
+
+                <div id = "north-central">
+                    
+                    <div class = "grid-images">
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/mihinthalaya  image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Mihintale </p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/minneriya image for card in where.jpg" >
+                            <div class="about-card">
+                                <p> Minneriya Wewa </p>
+                            </div>
+                        </a>
+                        </div>
+                    
+                    
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/kala  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Kala Wewa  </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/jetavanaramaya  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Jetavanaramaya </p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/Medirigiriya  image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Medirigiriya Vatadageya</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/Parakrama  image for card in where.jpg">
+                            <div class="about-card">
+                                <p>Parakrama Samudra</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/thivanka image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Thivanka Image House</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/hiriwaduna  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Hiriwaduna </p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class = "card">
+                            <img src = "../Images/Where to go images/north central/kandulla  image for card in where.jpg">
+                            <div class="about-card">
+                                <p> Kaudulla National Park</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                    
+                    </div>
+
+                </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div id = "logo">
+            <div id = "check-out">
+                <h4>For More Details About Us </h4>
+            </div>
+            <div id = "icons">
+                <a href="https://www.facebook.com/" target = "_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://twitter.com/" target = "_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a href = "https://www.instagram.com/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </div>
+        <div id = "more">
+            <p>@Copyrights Sri Lanka Tourism Website Project </p>
+        </div>
+    </footer>
+
+    <script src = "../Javascripts/whereToGo.js"></script>
+
+
+    
+</body>
+</html>
