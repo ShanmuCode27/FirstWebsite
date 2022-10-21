@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SPA SDK Sample</title>
+    <link rel="stylesheet" type="text/css" href="../mainCss.css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>SPA Authentication Sample</h2>
+    <p>Welcome to our page!</p>
+    <a href="https://dev-o7j10t6opbyd3gyu.us.auth0.com/authorize?
+      response_type=id_token token&
+      response_mode=form_post&
+      client_id=ob1cJuBIpCA3rye8GBH7lL3AT94x8sBX&
+      redirect_uri=undefined&
+      scope=read:tests&
+      state=xyzABC123&
+      nonce=eq...hPmz">
+      Sign In
+    </a>
+    <button id="btn-login" disabled="true" onclick="login()">Log in</button>
+    <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.20/auth0-spa-js.production.js"></script>
+  </body>
+</html>
