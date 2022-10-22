@@ -8,6 +8,7 @@ createAuth0Client({
 
   loginButton.addEventListener("click", (e) => {
     e.preventDefault();
+    console.log('clicked');
     auth0.loginWithRedirect();
   });
 
