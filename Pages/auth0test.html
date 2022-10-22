@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>SPA SDK Sample</title>
     <link rel="stylesheet" type="text/css" href="../mainCss.css" />
+    <script src="./Javascripts/auth.js" defer></script>
     <style>
       .hidden {
         display: none;
@@ -14,6 +15,7 @@
         display: block;
       }
     </style>
+    
   </head>
 
   <body>
@@ -29,8 +31,12 @@
       nonce=eqsdfshPmz">
       Sign In
     </a>
-    <button id="btn-login" disabled="true" onclick="login()">Log in</button>
-    <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+    <button id="login"  onclick="login()">Log in</button>
+    <button id="logout"  onclick="logout()">Log out</button>
+
+    <div id="profile">
+      
+    </div>
     <script src="https://cdn.auth0.com/js/auth0-spa-js/1.20/auth0-spa-js.production.js"></script>
   </body>
 </html>
