@@ -50,6 +50,6 @@ const login = async () => {
 
 const logout = () => {
   auth0.logout({
-    returnTo: 'https://shanmucode27.github.io/FirstWebsite/Pages/auth0test.html',
+    returnTo: 'https://shanmucode27.github.io/FirstWebsite',
   })
 }
