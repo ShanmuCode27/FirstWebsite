@@ -1,45 +1,55 @@
-createAuth0Client({
-  domain: "dev-o7j10t6opbyd3gyu.us.auth0.com",
-  client_id: "ZpK8Ua26oPx0BNHDzNAJN8fTXAu8vtBj",
-  redirect_uri: window.location.origin,
-}).then(async (auth0) => {
-  // Assumes a button with id "login" in the DOM
-  const loginButton = document.getElementById("login");
+let auth0 = null
 
-  loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log('clicked');
-    auth0.loginWithRedirect();
-  });
+window.onload = async () => {
+  await configureClient()
+  await processLoginState()
+  updateUI()
+}
 
-  if (location.search.includes("state=") && 
-      (location.search.includes("code=") || 
-      location.search.includes("error="))) {
-    await auth0.handleRedirectCallback();
-    window.history.replaceState({}, document.title, "/");
+const configureClient = async () => {
+  auth0 = await createAuth0Client({
+    domain: "dev-o7j10t6opbyd3gyu.us.auth0.com",
+    client_id: "ZpK8Ua26oPx0BNHDzNAJN8fTXAu8vtBj",
+  })
+}
+
+const processLoginState = async () => {
+  // Check code and state parameters
+  const query = window.location.search
+  if (query.includes("code=") && query.includes("state=")) {
+    // Process the login state
+    await auth0.handleRedirectCallback()
+    // Use replaceState to redirect the user away and remove the querystring parameters
+    window.history.replaceState({}, document.title, window.location.pathname)
   }
+}
 
-  // Assumes a button with id "logout" in the DOM
-  const logoutButton = document.getElementById("logout");
-
-  logoutButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    auth0.logout();
-  });
-
-  const isAuthenticated = await auth0.isAuthenticated();
-  const userProfile = await auth0.getUser();
-
-  // Assumes an element with id "profile" in the DOM
-  const profileElement = document.getElementById("profile");
-
+const updateUI = async () => {
+  const isAuthenticated = await auth0.isAuthenticated()
+  document.getElementById("btn-logout").disabled = !isAuthenticated
+  document.getElementById("btn-login").disabled = isAuthenticated
+  // NEW - add logic to show/hide gated content after authentication
   if (isAuthenticated) {
-    profileElement.style.display = "block";
-    profileElement.innerHTML = `
-            <p>${userProfile.name}</p>
-            <img src="${userProfile.picture}" />
-          `;
+    document.getElementById("gated-content").classList.remove("hidden")
+    document.getElementById(
+      "ipt-access-token"
+    ).innerHTML = await auth0.getTokenSilently()
+    document.getElementById("ipt-user-profile").innerHTML = JSON.stringify(
+      await auth0.getUser()
+    )
   } else {
-    profileElement.style.display = "none";
+    document.getElementById("gated-content").classList.add("hidden")
   }
-});
+}
+
+const login = async () => {
+  await auth0.loginWithRedirect({
+    redirect_uri: window.location.href,
+  })
+}
+
+const logout = () => {
+  auth0.logout({
+    returnTo: window.location.href,
+  })
+}
