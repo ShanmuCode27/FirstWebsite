@@ -44,12 +44,12 @@ const updateUI = async () => {
 
 const login = async () => {
   await auth0.loginWithRedirect({
-    redirect_uri: window.location.href,
+    redirect_uri: 'https://shanmucode27.github.io/FirstWebsite/Pages/auth0test.html',
   })
 }
 
 const logout = () => {
   auth0.logout({
-    returnTo: window.location.href,
+    returnTo: 'https://shanmucode27.github.io/FirstWebsite/Pages/auth0test.html',
   })
 }
