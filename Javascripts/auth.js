@@ -44,7 +44,7 @@ const updateUI = async () => {
 
 const login = async () => {
   await auth0.loginWithRedirect({
-    redirect_uri: 'https://shanmucode27.github.io/FirstWebsite',
+    redirect_uri: 'https://shanmucode27.github.io/FirstWebsite/Pages/auth0test.html',
   })
 }
 
